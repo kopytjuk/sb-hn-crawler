@@ -29,6 +29,7 @@ logger.addHandler(c_handler)
 QUERY_URL = "https://sb-heilbronn.lmscloud.net/cgi-bin/koha/opac-search.pl?&limit=copydate%2Cst-numeric%3D-2020&sort_by=relevance"
 save_path = "./pages/"
 
+logger.info("Stadtbibliothek Heilbronn Crawler!")
 logger.info('Starting with the first page ...')
 
 resp = sess.get(QUERY_URL)
